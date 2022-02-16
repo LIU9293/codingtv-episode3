@@ -54,8 +54,8 @@ class Timer {
     const againButton = document.createElement("div")
     pauseButton.setAttribute("class", "button")
     againButton.setAttribute("class", "button")
-    pauseButton.innerHTML = "Pause"
-    againButton.innerHTML = "Again"
+    pauseButton.innerHTML = String.fromCodePoint(0x23EF)
+    againButton.innerHTML = String.fromCodePoint(0x1F504)
 
     pauseButton.onclick = this.go.bind(this)
     againButton.onclick = this.again.bind(this)
